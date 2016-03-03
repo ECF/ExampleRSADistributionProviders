@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ECF Example Remote Service Distribution Provider Client
+Bundle-SymbolicName: org.eclipse.ecf.example1.provider.dist.client
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.eclipse.ecf.example1.internal.provider.dist.client.Activator
+Bundle-Vendor: Eclipse.org - ECF
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.eclipse.ecf.core,
+ org.eclipse.ecf.core.identity;version="3.3.0",
+ org.eclipse.ecf.core.provider;version="3.1.0",
+ org.eclipse.ecf.core.util;version="3.4.0",
+ org.eclipse.ecf.example1.provider.dist.common;version="1.0.0",
+ org.eclipse.ecf.remoteservice,
+ org.eclipse.ecf.remoteservice.asyncproxy,
+ org.eclipse.ecf.remoteservice.client;version="8.1.0",
+ org.eclipse.ecf.remoteservice.provider,
+ org.eclipse.equinox.concurrent.future;version="1.1.0",
+ org.osgi.framework
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.equinox.common

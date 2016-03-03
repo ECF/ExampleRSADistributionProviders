@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ECF Example Distribution Provider Server
+Bundle-SymbolicName: org.eclipse.ecf.example1.provider.dist.server
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.eclipse.ecf.example1.internal.provider.dist.server.Activator
+Bundle-Vendor: Eclipse.org - ECF
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.eclipse.ecf.core,
+ org.eclipse.ecf.core.identity;version="3.3.0",
+ org.eclipse.ecf.core.provider;version="3.1.0",
+ org.eclipse.ecf.example1.provider.dist.common;version="1.0.0",
+ org.eclipse.ecf.remoteservice,
+ org.eclipse.ecf.remoteservice.provider,
+ org.osgi.framework
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.equinox.common
