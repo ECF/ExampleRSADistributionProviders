@@ -27,7 +27,7 @@ public class Activator implements BundleActivator {
 
 	private static BundleContext context;
 
-	public static final String SERVER_ID_PARAMETER = ProviderConstants.SERVER_PROVIDER_CONFIG_TYPE + ".id";
+	public static final String SERVER_ID_PARAMETER = "id";
 	public static final String SERVER_ID_PARAMETER_DEFAULT = "tcp://localhost:3333";
 
 	static BundleContext getContext() {
