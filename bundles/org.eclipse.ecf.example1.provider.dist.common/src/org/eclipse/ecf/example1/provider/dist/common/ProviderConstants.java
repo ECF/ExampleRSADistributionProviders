@@ -10,6 +10,8 @@ package org.eclipse.ecf.example1.provider.dist.common;
 
 public interface ProviderConstants {
 
+	// Server distribution provider config type
 	public static final String SERVER_PROVIDER_CONFIG_TYPE = "ecf.example1.provider.dist.server";
+	// Client distribution provider config type
 	public static final String CLIENT_PROVIDER_CONFIG_TYPE = "ecf.example1.provider.dist.client";
 }

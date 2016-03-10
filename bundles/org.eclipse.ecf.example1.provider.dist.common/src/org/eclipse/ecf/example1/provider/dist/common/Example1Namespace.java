@@ -18,6 +18,11 @@ public class Example1Namespace extends URIIDNamespace {
 	public static final String SCHEME = "ecf.example1";
 	public static Example1Namespace INSTANCE;
 	
+	/**
+	 * The singleton instance of this namespace is created (and registered
+	 * as a Namespace service) in the Activator class for this bundle.
+	 * The singleton INSTANCE may then be used by both server and client.
+	 */
 	public Example1Namespace() {
 		super(NAME, "Example 1 Namespace");
 		INSTANCE = this;
