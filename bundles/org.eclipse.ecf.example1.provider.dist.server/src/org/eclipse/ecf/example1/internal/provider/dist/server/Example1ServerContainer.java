@@ -47,7 +47,7 @@ public class Example1ServerContainer extends AbstractRSAContainer {
 	 * then these new values will <b>override</b> the default values in the EndpointDescription.
 	 *
 	 */
-	protected Map<String, Object> registerEndpoint(RSARemoteServiceRegistration registration) {
+	protected Map<String, Object> exportRemoteService(RSARemoteServiceRegistration registration) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -59,7 +59,7 @@ public class Example1ServerContainer extends AbstractRSAContainer {
 	 * by the registration.  Necessary clean-up/shutdown of transport should be completed
 	 * before returning.
 	 */
-	protected void unregisterEndpoint(RSARemoteServiceRegistration registration) {
+	protected void unexportRemoteService(RSARemoteServiceRegistration registration) {
 		// TODO Auto-generated method stub
 	}
 }
