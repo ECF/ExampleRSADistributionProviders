@@ -49,7 +49,7 @@ public class Activator implements BundleActivator {
 									Map<String, ?> parameters) {
 								// Create and configure an instance of our server 
 								// container type
-								return new Example1ServerContainer(getIDParameterValue(Example1Namespace.INSTANCE, parameters,
+								return new Example1ServerContainer(getIDParameterValue(Example1Namespace.getInstance(), parameters,
 										SERVER_ID_PARAMETER, SERVER_ID_PARAMETER_DEFAULT));
 							}
 						}).build(),

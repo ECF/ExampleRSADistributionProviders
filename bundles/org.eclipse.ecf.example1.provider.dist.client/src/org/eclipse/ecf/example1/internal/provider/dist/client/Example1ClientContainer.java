@@ -10,7 +10,7 @@ import org.eclipse.ecf.remoteservice.client.RemoteServiceClientRegistration;
 public class Example1ClientContainer extends AbstractRSAClientContainer {
 
 	public Example1ClientContainer() {
-		super(Example1Namespace.INSTANCE
+		super(Example1Namespace.getInstance()
 				.createInstance(new Object[] { "uuid:" + java.util.UUID.randomUUID().toString() }));
 	}
 

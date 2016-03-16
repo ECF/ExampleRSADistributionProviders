@@ -15,8 +15,8 @@ public class Example1Namespace extends URIIDNamespace {
 	private static final long serialVersionUID = 2460015768559081873L;
 
 	public static final String NAME = "ecf.example1.namespace";
-	public static final String SCHEME = "ecf.example1";
-	public static Example1Namespace INSTANCE;
+	private static final String SCHEME = "ecf.example1";
+	private static Example1Namespace INSTANCE;
 	
 	/**
 	 * The singleton instance of this namespace is created (and registered
@@ -28,6 +28,10 @@ public class Example1Namespace extends URIIDNamespace {
 		INSTANCE = this;
 	}
 
+	public static Example1Namespace getInstance() {
+		return INSTANCE;
+	}
+	
 	@Override
 	public String getScheme() {
 		return SCHEME;
